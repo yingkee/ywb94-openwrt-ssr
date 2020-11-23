@@ -8,12 +8,11 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=openwrt-ssr
-PKG_VERSION:=1.2.1
-#PKG_RELEASE:=1
+PKG_NAME:=openwrt-ssr-mfb-mod
+PKG_VERSION:=1.3
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/ywb94/shadowsocks-libev
+PKG_SOURCE_URL:=https://github.com/yingkee/shadowsocks-libev
 PKG_SOURCE_VERSION:=11db1d5e48f539855ea1a66947eba9bb9bc82150
 
 PKG_SOURCE_PROTO:=git
@@ -21,7 +20,7 @@ PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
 
 PKG_LICENSE:=GPLv3
 PKG_LICENSE_FILES:=LICENSE
-PKG_MAINTAINER:=yushi studio <ywb94@qq.com>
+PKG_MAINTAINER:=mfb
 
 #PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)
 PKG_BUILD_DIR:=$(BUILD_DIR)/$(PKG_NAME)/$(BUILD_VARIANT)/$(PKG_NAME)-$(PKG_VERSION)
@@ -38,7 +37,7 @@ define Package/openwrt-ssr/Default
 	CATEGORY:=LuCI
 	SUBMENU:=3. Applications
 	TITLE:=shadowsocksR-libev LuCI interface
-	URL:=https://github.com/ywb94/openwrt-ssr
+	URL:=https://github.com/yingkee/ywb94-openwrt-ssr
 	VARIANT:=$(1)
 	DEPENDS:=$(3)	
 	PKGARCH:=all
