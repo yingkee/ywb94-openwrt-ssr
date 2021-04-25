@@ -8,7 +8,7 @@
 
 include $(TOPDIR)/rules.mk
 
-PKG_NAME:=openwrt-ssr-mfb-mod
+PKG_NAME:=openwrt-ssr
 PKG_VERSION:=1.3
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
