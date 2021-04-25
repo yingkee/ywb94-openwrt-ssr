@@ -12,8 +12,8 @@ PKG_NAME:=openwrt-ssr-mfb-mod
 PKG_VERSION:=1.3
 
 PKG_SOURCE:=$(PKG_NAME)-$(PKG_VERSION).tar.gz
-PKG_SOURCE_URL:=https://github.com/yingkee/shadowsocks-libev
-PKG_SOURCE_VERSION:=2e0729e6d1306048210c7e98be2f988086273f54
+PKG_SOURCE_URL:=https://github.com/yingkee/ywb94-openwrt-ssr
+PKG_SOURCE_VERSION:=d1d5f3ad13c119742809cb9eb11334cdfb07233c
 
 PKG_SOURCE_PROTO:=git
 PKG_SOURCE_SUBDIR:=$(PKG_NAME)-$(PKG_VERSION)
